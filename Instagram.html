@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios de Instagram</title>
+  <link rel="stylesheet" href="redes.css" />
+</head>
+<body>
+
+<section class="contenedor">
+  <h1>Servicios de Instagram</h1>
+  <p class="descripcion">Elige el servicio que deseas comprar</p>
+
+  <div class="servicios">
+    <!-- Seguidores -->
+    <div class="tarjeta">
+     <h2>🧑‍🤝‍🧑 Seguidores</h2>
+      <p>Calidad real y entrega rápida</p>
+
+      <label for="seguidores">Cantidad:</label>
+      <select id="seguidores" onchange="actualizarPrecio('seguidores')">
+        <option value="1000">1000 Seguidores</option>
+        <option value="2000">2000 Seguidores</option>
+        <option value="3000">3000 Seguidores</option>
+        <option value="4000">4000 Seguidores</option>
+        <option value="5000">5000 Seguidores</option>
+        <option value="6000">6000 Seguidores</option>
+        <option value="7000">7000 Seguidores</option>
+        <option value="8000">8000 Seguidores</option>
+        <option value="9000">9000 Seguidores</option>
+        <option value="10000">10000 Seguidores</option>
+        
+      </select>
+      <p id="precio-seguidores" class="precio">Precio: $290</p>
+
+      <a id="btn-seguidores" href="#" class="btn whatsapp-btn" target="_blank">
+  <img src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png" alt="WhatsApp" />
+  Comprar
+</a>
+    </div>
+
+    <!-- Likes -->
+    <div class="tarjeta">
+     <h2>🎬 Vistas</h2>
+      <p>Para fotos y publicaciones</p>
+
+      <label for="likes">Cantidad:</label>
+      <select id="likes" onchange="actualizarPrecio('likes')">
+        <option value="100">100 Likes</option>
+        <option value="500">500 Likes</option>
+        <option value="1000">1000 Likes</option>
+      </select>
+
+      <p id="precio-likes" class="precio">Precio: $0.80</p>
+
+      <a id="btn-seguidores" href="#" class="btn whatsapp-btn" target="_blank">
+  <img src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png" alt="WhatsApp" />
+  Comprar
+</a>
+    </div>
+
+    <!-- Vistas -->
+    <div class="tarjeta">
+      <h2>❤️ Likes</h2>
+      <p>Para reels, videos y stories</p>
+
+      <label for="vistas">Cantidad:</label>
+      <select id="vistas" onchange="actualizarPrecio('vistas')">
+        <option value="500">500 Vistas</option>
+        <option value="1000">1000 Vistas</option>
+        <option value="5000">5000 Vistas</option>
+      </select>
+
+      <p id="precio-vistas" class="precio">Precio: $0.70</p>
+<a id="btn-seguidores" href="#" class="btn whatsapp-btn" target="_blank">
+  <img src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png" alt="WhatsApp" />
+  Comprar
+</a>
+
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
